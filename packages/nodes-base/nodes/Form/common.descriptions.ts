@@ -169,12 +169,13 @@ export const formFields: INodeProperties = {
 					},
 				},
 				{
-					displayName: 'HTML Template',
+					displayName: 'HTML',
 					name: 'html',
 					typeOptions: {
 						editor: 'htmlEditor',
 					},
 					type: 'string',
+					noDataExpression: true,
 					default: placeholder,
 					description: 'HTML template to render',
 					displayOptions: {
@@ -222,8 +223,7 @@ export const formFields: INodeProperties = {
 					},
 				},
 				{
-					displayName:
-						'Does not accept <code>&lt;style&gt;</code> <code>&lt;script&gt;</code> or <code>&lt;input&gt;</code> tags.',
+					displayName: 'HTML elements to render',
 					name: 'htmlTips',
 					type: 'notice',
 					default: '',
