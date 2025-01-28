@@ -107,7 +107,7 @@ const completionProperties = updateDisplayOptions(
 			options: [
 				{
 					name: 'Show Completion Screen',
-					value: 'text',
+					value: 'completionScreen',
 					description: 'Show a response text to the user',
 				},
 				{
@@ -138,7 +138,7 @@ const completionProperties = updateDisplayOptions(
 			required: true,
 			displayOptions: {
 				show: {
-					respondWith: ['text'],
+					respondWith: ['completionScreen'],
 				},
 			},
 		},
@@ -152,7 +152,7 @@ const completionProperties = updateDisplayOptions(
 			},
 			displayOptions: {
 				show: {
-					respondWith: ['text'],
+					respondWith: ['completionScreen'],
 				},
 			},
 		},
@@ -165,7 +165,7 @@ const completionProperties = updateDisplayOptions(
 			options: [{ ...formTitle, required: false, displayName: 'Completion Page Title' }],
 			displayOptions: {
 				show: {
-					respondWith: ['text'],
+					respondWith: ['completionScreen'],
 				},
 			},
 		},
